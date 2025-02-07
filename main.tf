@@ -5,12 +5,6 @@ terraform {
       version = "~> 5.0"
     }
   }
-  backend "s3" {
-    bucket = "terraform-labs-backend-et9kziex"
-    key = "iam-user/terraform.tfstate"
-    region = "us-east-1"
-    encrypt = true
-  }
 }
 
 resource "aws_iam_user" "numbered_users" {
